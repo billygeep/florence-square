@@ -1,6 +1,6 @@
 # florence-square
 
-## Florence Square Microsite
+Florence Square Microsite
 
 ### **npm start** - for local development
 
