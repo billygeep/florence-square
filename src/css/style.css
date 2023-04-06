@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "DrukCond";
+  src: url("../fonts/drukxcond-super-trial-webfont.woff") format("woff2"),
+    url("../fonts/drukxcond-super-trial-webfont.woff2") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+
+html,
+body {
+  color: #fff;
+  background-color: #fff;
+}
+#app {
+  height: 100vh;
+}
+.can-scroll {
+  height: auto;
+}
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.background img {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.background-scroll {
+  position: absolute;
+  height: 100%;
+  right: 20px;
+  top: 50px;
+  height: calc(100% - 100px);
+  transform: translateY(-110vh);
+  transition: 0.6s ease-in-out;
+}
+.background-scroll-line {
+  width: 1px;
+  background-color: #ffffff;
+}
+.background-scroll-line-top {
+  position: absolute;
+}
+.background-scroll-line-bottom {
+  position: absolute;
+  bottom: 0;
+}
+.background-scroll-text {
+  font-family: "aktiv-grotesk-extended", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10px;
+  position: absolute;
+  transform: translateY(-100%) rotateZ(90deg);
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  transform-origin: center;
+}
+
+.logo-container {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+}
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 512px;
+  height: 215px;
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+}
+.logo-mask {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-mask-image: url(../imgs/florencesq_logo.svg);
+  -webkit-mask-position: left;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 512px 100%;
+  -webkit-mask-size: 512px 100%;
+  transition: 1s ease-in-out;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  padding-top: 100vh;
+  width: 100%;
+  height: 200%;
+  text-align: center;
+  z-index: 2;
+}
+.content-slogan {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 100px 0 0;
+}
+.content-slogan-inner {
+  position: relative;
+}
+.content-slogan-inner h1 {
+  font-family: "DrukCond", sans-serif;
+  font-size: 160px;
+  letter-spacing: 3px;
+  line-height: 135px;
+  font-weight: 100;
+}
+.content-slogan-inner img {
+  width: 100%;
+}
+.content-date {
+  margin: 60vh 0;
+  font-size: 24px;
+  font-family: "aktiv-grotesk-extended", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.contact {
+  text-align: center;
+  padding: 0px 0 40px;
+  font-family: "aktiv-grotesk-extended", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.contact-logo {
+  margin-bottom: 20px;
+}
+.contact-logo-kf img {
+  height: 40px;
+}
+.contact-logo-cbre {
+  margin-top: 10px;
+}
+.contact-logo-cbre img {
+  height: 30px;
+}
+
+.contact h2 {
+  margin-bottom: 50px;
+  font-family: "DrukCond", sans-serif;
+  font-size: 70px;
+  letter-spacing: 1.5px;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+.contact-credit {
+  margin-top: 60px;
+}
+
+a,
+a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media (max-width: 1399.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 767.98px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .content-slogan-inner h1 {
+    font-size: 90px;
+    line-height: 85px;
+  }
+  .background img {
+    width: auto;
+    height: 100%;
+  }
+  .logo {
+    width: 256px;
+    height: 107px;
+  }
+  .contact-agent:first-child {
+    margin-bottom: 50px;
+  }
+  .logo-mask {
+    mask-size: 256px 100%;
+    -webkit-mask-size: 256px 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 389.99px) {
+}
+
+@media (hover: hover) {
+  .contact a:hover {
+    color: #0c68b1;
+  }
+}
